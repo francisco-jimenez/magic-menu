@@ -1,4 +1,5 @@
-export interface MenuOption {
+export interface TMenuOption {
+    type : 'OPTION',
     iconName?: String,
     text: String,
     shortcut? : {
@@ -7,11 +8,12 @@ export interface MenuOption {
     }
 }
 
-export interface SubMenu {
+export interface TSubMenu {
+    type : 'SUBMENU',
     text: String,
-    options : MenuOption[]
+    options : TMenuOption[]
 }
 
-export interface Menu {
-    menu : Array<MenuOption|SubMenu>
+export interface TMenu {
+    menu : Array<TMenuOption|TSubMenu>
 }
