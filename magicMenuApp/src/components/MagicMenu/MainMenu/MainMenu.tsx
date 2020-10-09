@@ -18,12 +18,18 @@ const MagicMenu3: FunctionComponent<Props> = (props: Props) => {
   return (
     <>
       <Menu id='first_item' defaultActiveFirst ={true} defaultSelectedKeys={['a1']} mode='inline' style={{ margin: 20, width: 300 }}>
-        <MenuItemGroup title="group 1" key="a">
+        {/* <MenuItemGroup title="group 1" key="a"> */}
           <MenuItem key="a1">
-            <img src={zapIcon} alt="zapIcon" />
+            <img src={zapIcon} className ='mm-item-list-icon' alt="zapIcon" />
+            <div>
+              Set a reminder...
+            </div>
+            <div className ='mm-item-list-shortcut'>
+              H
+            </div>
           </MenuItem>
           <MenuItem key="a2">3</MenuItem>
-        </MenuItemGroup>
+        {/* </MenuItemGroup> */}
         <MenuItemGroup title="group 2" key="3">
           <MenuItem key="31">4</MenuItem>
           <MenuItem key="32">5</MenuItem>
