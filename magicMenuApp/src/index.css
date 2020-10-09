@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+*{
+  font-family: Inter, sans-serif !important;
+}
+
+.rc-menu-item{
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.rc-menu-item-selected {
+  background-color: inherit !important;
+}
+
+.rc-menu-item-active {
+  background-color:  rgba(228, 228, 238, 0.25)!important;
+}
+
+.rc-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 0px 0px 20px;
+
+  /* position: static;
+  width: 608px;
+  height: 44px;
+  left: 0px;
+  top: 44px; */
+
+  /* background: rgba(228, 228, 238); */
+}
+
+.rc-menu {
+  position: relative;
+  width: 608px !important;
+  height: 430px !important;
+  color: #E4E4EE !important;
+
+/* Black */
+
+  background: #2D3346;
+  box-shadow: 0px 50px 100px -20px rgba(11, 31, 82, 0.27), 0px 22.3363px 17.869px rgba(72, 136, 159, 0.0417275), 0px 6.6501px 5.32008px rgba(72, 136, 159, 0.0282725);
+  border-radius: 12px;
+}
+
+
+
+
